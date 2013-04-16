@@ -4,7 +4,7 @@
   $.fn.adopt = function() {
     this.each(function() {
       $(this).contents().filter(function() {
-        return this.nodeType === 3
+        return this.nodeType === 3;
       }).each(function(i) {
         var str        = this.data,
             firstIndex = this.data.indexOf(" "),
