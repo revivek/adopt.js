@@ -1,6 +1,6 @@
 # Adopt
 
-**If you seek consistent typography across all screen sizes, Adopt.js is for you.** It's a simple jQuery plugin that removes
+**If you seek consistent typography across all screen sizes, Adopt.coffee is for you.** It's a simple jQuery plugin that removes
 [orphans](http://www.fonts.com/content/learning/fontology/level-2/text-typography/rags-widows-orphans)
 from your elements.
 
