@@ -7,7 +7,7 @@ from your elements.
 ### Usage
 
 Include the jQuery library (version 1.8 or newer) and the Adopt.js
-plugin files, *preferably at the bottom of the page before closing the
+plugin file, *preferably at the bottom of the page before closing the
 <code>body</code> tag*.
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
