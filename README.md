@@ -7,18 +7,19 @@ from your elements.
 ### Usage
 
 Include the jQuery library (version 1.8 or newer) and the adopt.min.js
-plugin file, *preferably at the bottom of the page before closing the
-<code>body</code> tag*.
+plugin file, *preferably at the bottom of the page before the closing `</body>` tag.
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="jquery.adopt.min.js"></script>
-    <script>
-      // To remove orphans from all headings.
-      $('h1, h2, h3, h4, h5, h6').adopt();
+```html
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.adopt.min.js"></script>
+<script>
+  // To remove orphans from all headings.
+  $('h1, h2, h3, h4, h5, h6').adopt();
 
-      // To remove orphans from all article paragraphs.
-      $("article p").adopt();
-    </script>
+  // To remove orphans from all article paragraphs.
+  $("article p").adopt();
+</script>
+```
 
 ### How it works
 
