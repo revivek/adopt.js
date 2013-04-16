@@ -7,7 +7,7 @@
         return this.nodeType === 3;
       }).each(function(i) {
         var lastIndex = this.data.lastIndexOf(" ");
-        if (-1 < lastIndex) {
+        if (0 < lastIndex && lastIndex < this.data.length - 1) {
           this.data = this.data.substring(0, lastIndex) + "\u00a0" + this.data.substring(lastIndex + 1);
         }
       });
