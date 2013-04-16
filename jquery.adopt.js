@@ -6,13 +6,10 @@
       $(this).contents().filter(function() {
         return this.nodeType === 3;
       }).each(function(i) {
-        var str        = this.data,
-            firstIndex = this.data.indexOf(" "),
-            lastIndex  = str.lastIndexOf(" ");
-        if (lastIndex > firstIndex && lastIndex < str.length - 1) {
-          str = str.substring(0, lastIndex) + "\u00a0" + str.substring(lastIndex + 1);
+        var lastIndex = this.data.lastIndexOf(" ");
+        if (-1 < lastIndex) {
+          this.data = this.data.substring(0, lastIndex) + "\u00a0" + this.data.substring(lastIndex + 1);
         }
-        this.data = str;
       });
     });
   };
