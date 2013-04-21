@@ -6,6 +6,6 @@
       textNodes = $(@).contents().filter -> @nodeType == 3
       textNodes.each ->
         last = @data.lastIndexOf " "
-        if 0 < last < @data.length - 1
+        if 0 < last < @data.length - 1 and @data.substring(last+1).length < 10
           @data = "#{@data.substring 0, last}\u00a0#{@data.substring last+1}"
 ) jQuery
